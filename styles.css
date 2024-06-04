@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=LXGW+WenKai+Mono+TC&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Oswald:wght@200..700&display=swap');
+
+body{
+    background-color: white;
+}
+
+.NavBar{
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    max-height: 120px;
+
+    background: rgba(75, 170, 24, 0.98);        /*  !!!YOU CAN CHANGE THE OPACITY OF THE NAVBAR HERE (Fourth number in the rgba)!!!*/
+    box-shadow: 0px 0px 0px 5px rgb(49, 49, 49);
+    z-index: 1;
+    
+    
+
+    /* Below is used to align the buttons and icon */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.Logo{
+
+    border-radius: 10%;
+    border: 2px solid;
+    border-color: black;
+
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: white;
+
+    max-height: 150px;
+    height: auto;
+    width: 400px;
+
+    margin: 1ch;
+    margin-left: 5ch;
+}
+
+.NavBtn{
+    background: none;
+    border: none;
+
+    font-size: 3ch;
+    letter-spacing: 0.5ch;
+
+    font-family: 'Oswald';
+
+    color: #ba2d1e;
+
+}
+.NavBtn:hover{ /* This is sort of an animation technique, when you add the ':' to the name it only applies to an action */
+    transform: scale(1.1);
+    color: #e03422;
+}
+
+.NavBtnContainer{
+    display: flex;
+    align-items: center;
+    flex-shrink: 1;
+
+    gap: 2ch;
+    padding-right: 5ch;
+}
+
+/* SCREENS */
+.EndScreen{
+    margin-top: 20px;
+    margin-left: 1%;
+    margin-right: 1%;
+
+    background-image: url(Pictures/Home/EndPageBackground.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+
+    background-size: 100% auto;
+    height: 600px;
+
+}
+
+.TitleScreen{
+    margin-top: 130px;
+    margin-left: 1%;
+    margin-right: 1%;
+
+    background-image: url(Pictures/Home/TitlePageBackground.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+
+    background-size: 100% auto;
+    height: 600px;
+
+}
+.TS_Phrase{
+    font-family: 'Dancing Script';
+    color: #bf9f52;
+    font-size: 4ch;
+    text-align: center;
+    margin: 0;
+    
+}
+.TS_Title{
+    font-family: 'Libre Baskerville';
+    color: white;
+    text-align: center;
+    font-size: 6ch;
+    margin-bottom: 20px;
+    margin-top: 5px;
+
+    width: 30ch;
+}
+
+.Cover{
+    position: inherit;
+    overflow: hidden;
+    top: 130px;
+    width: 100%;
+    height: inherit;
+    
+
+    background-color: black;
+    background-position: center;
+    opacity: .6;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+
+}
+
+.Quick_Services{
+    background-color: #3e403d; 
+
+    margin-left: 1%;
+    margin-right: 1%;
+
+    margin-top: 20px;
+    
+}
+.imgContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+/* Special Images */
+
+.SmallImage{
+    width: auto;
+    height: 250px;
+}
+
+
+/* Special Buttons */
+
+.LinkBtn{
+    color: white;
+    font-family: 'Oswald';
+    background: none;
+    box-shadow: none;
+
+    border: gold solid;
+    border-width: 2px;
+
+    /* Sizing */
+    width: 80ch;
+    height: 10ch;
+
+    /* Padding */
+    margin: 20px;
+    align-self: center;
+
+    text-align: center;
+}
+.BtnContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.LinkBtn:hover{
+    transform: scale(1.1);
+    background-color: grey;
+}
+
+
+/* LABELS */
+
+.label1{
+    text-align: center;
+    font-family: 'Oswald';
+    color: white;
+
+    font-size: 6ch;
+
+    margin: auto;
+}
+.label2{
+    text-align: center;
+    font-family: 'Libre Baskerville';
+    color: white;
+}
+.label3{
+    text-align: center;
+    font-family: 'LXGW WenKai Mono TC';
+    color: white;
+}
