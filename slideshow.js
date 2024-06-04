@@ -17,6 +17,10 @@ function showSlides(){
 
 
 
-      setTimeout(showSlides, 8000); // Change image every 8 seconds
+      //setTimeout(showSlides, 8000); // Change image every 8 seconds       This sort of automatically runs it, but it bugs out in browser sometimes so I have disabled it.
 }
 
+// Next/previous controls
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}

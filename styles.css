@@ -6,6 +6,8 @@ body{
 
 a{
     text-decoration: none;
+    display: flex;
+    justify-content: center;
 }
 .NavBar{
     overflow: hidden;
@@ -383,6 +385,9 @@ a{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+}
+.NavArrow:hover{
+    transform: scale(1.1);
 }
 .labelNav{
     text-align: center;
