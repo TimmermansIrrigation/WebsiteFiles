@@ -82,7 +82,7 @@
                 
             </div>
 
-            <a class="BtnContainer" href="contact.html">
+            <a class="BtnContainer1" href="contact.html">
                 <button class="LinkBtn">CONTACT US</button>
             </a>
 
@@ -120,6 +120,21 @@
             
         </div>
 
-        <script type="text/javascript" src="slideshow.js"></script> <!--Linking the JS file to this html page-->
+        <!--Overlay button to request a quote-->
+        <a class="QuoteBTN" onclick="UpdateForm()" >
+            <button class="QuoteBTNChild">Request A Quote</button>
+        </a>
+        <iframe class="Form" src="https://docs.google.com/forms/d/e/1FAIpQLSdsBDkeR_culAOZ0obEN73C9JiNUKhXoieIFF1A2Yb1MRn6mw/viewform?embedded=true" width="400" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+
+        <a class="QuoteBTNExit" onclick="UpdateForm()">
+            <button class="QuoteBTNChildExit">X</button>
+        </a>
+
+        <script type="text/javascript" src="Form.js"></script> <!--Linking the JS file to this html page           THIS MUST REMAIN AT THE VERY BOTTOM OF BODY!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+
+        <!--End of the overlay button-->
+
+
+        <script type="text/javascript" src="slideshow.js"></script> <!--Linking the JS file to this html page           THIS MUST REMAIN AT THE VERY BOTTOM OF BODY!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
     </body>
 </html>
