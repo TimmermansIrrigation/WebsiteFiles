@@ -1,5 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=LXGW+WenKai+Mono+TC&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Oswald:wght@200..700&display=swap');
 
+
+/*
+
+Here are the Hex values for the logo colors
+
+Red: #c12026
+Light Green: #239b02
+Light Brown: #493322
+Light Blue: #a9eae8
+Dark Green: #1d7001
+Dark Brown: #3a2819
+Dark Blue: #7dd1d1
+
+White: #eae9da
+Black: #000000
+
+*/
+
+
 body{
     background-color: white;
 }
@@ -15,10 +34,10 @@ a{
     top: 0;
     left: 0;
     right: 0;
-    max-height: 120px;
+    height: 100px;
 
-    background: rgba(75, 170, 24, 0.98);        /*  !!!YOU CAN CHANGE THE OPACITY OF THE NAVBAR HERE (Fourth number in the rgba)!!!*/
-    box-shadow: 0px 0px 0px 5px rgb(49, 49, 49);
+    background: #c12026;       /* linear-gradient(45deg,grey, black, grey)  ----- If you want a gradient*/
+    /* box-shadow: 0px 0px 0px 1px black; */
     z-index: 1;
     
     
@@ -30,22 +49,16 @@ a{
 }
 
 .Logo{
-
-    border-radius: 10%;
+    /* border-radius: 10%;
     border: 2px solid;
-    border-color: black;
+    border-color: black; */
 
-    padding-left: 10px;
-    padding-right: 10px;
-    background-color: white;
+    background-color: none;
 
-    max-height: 150px;
-    height: auto;
-    width: 400px;
-
-    margin: 1ch;
-    margin-left: 5ch;
+    height: 100%;
+    width: auto;
 }
+
 
 .NavBtn{
     background: none;
@@ -56,12 +69,17 @@ a{
 
     font-family: 'Oswald';
 
-    color: #ba2d1e;
+    color: white;
 
 }
 .NavBtn:hover{ /* This is sort of an animation technique, when you add the ':' to the name it only applies to an action */
     transform: scale(1.1);
     color: #e03422;
+
+    text-shadow: -1px 1px 0 white,
+                1px 1px 0 white,
+                1px -1px 0 white,
+                -1px -1px 0 white;
 }
 
 .NavBtnContainer{
@@ -89,15 +107,15 @@ a{
 }
 
 .TitleScreen{
-    margin-top: 140px;
+    margin-top: 120px;
     margin-left: 1%;
     margin-right: 1%;
 
-    background-image: url(Pictures/Home/TitlePageBackground.webp);
+    background-image: url(Pictures/Home/TitlePageBackground.jpg);
     background-repeat: no-repeat;
     background-position: center;
 
-    background-size: 100% 100%;
+    background-size: 100% auto;
     height: 550px;
 
 }
@@ -128,9 +146,8 @@ a{
     height: inherit;
     
 
-    background-color: black;
+    background-color: rgba(0, 0, 0,0.6);
     background-position: center;
-    opacity: .6;
 
     display: flex;
     flex-direction: column;
@@ -221,7 +238,8 @@ a{
 
 /* CONTACT HTML CSS */
 .Contact_Info{
-    background-color: #3e403d; 
+    background-color: rgba(193, 32, 38, .9);
+    border: #239b02 solid;
 
     margin-left: 1%;
     margin-right: 1%;
@@ -238,8 +256,22 @@ a{
     justify-content: space-evenly;
     align-items: baseline;
 }
+@media only screen and (width: 560px){
+    .ContactContainer{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .Left_Contact{
+        max-width: 80%;
+    }
+    .Right_Contact{
+        max-width: 80%;
+    }
+}
 .Left_Contact{
-    background-color: black;
+    /* background-color: #c12026; */
     max-width: 40%;
     padding: 20px;
 
@@ -247,7 +279,7 @@ a{
     border-radius: 10%;
 }
 .Right_Contact{
-    background-color: black;
+    /* background-color: #c12026; */
     max-width: 40%;
     padding: 20px;
 
@@ -264,7 +296,7 @@ a{
 .Name{
     text-align: left;
     font-family: 'Libre Baskerville';
-    color: grey;
+    color: #3a2819;
     font-size: 3ch;
 
     margin: 0;
@@ -274,7 +306,7 @@ a{
 .Entry{
     text-align: left;
     font-family: 'Libre Baskerville';
-    color: grey;
+    color: white;
     font-size: 1.5vw;
 
     margin: 20px;
@@ -282,6 +314,13 @@ a{
 .Icon{
     width: 40px;
     height: 40px;
+
+    padding-right: 20px;
+    padding-top: 5px;
+}
+.Icon2{
+    width: auto;
+    height: 400px;
 
     padding-right: 20px;
     padding-top: 5px;
@@ -312,8 +351,18 @@ a{
 }
 .Services_Preview{
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+}
+@media only screen and (max-width: 560px){ /* Only occurs when the screen is smaller than the specified width (So for phones basically) */
+    .Services_Preview{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+    }
 }
 .Service_Contents{
     display: flex;
@@ -328,14 +377,17 @@ a{
 }
 .Service_Title{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
 }
 .ServiceLabel{
     text-align: start;
     font-family: 'Libre Baskerville';
     color: white;
 
-    width: 30ch;
+    width: 50ch;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 
