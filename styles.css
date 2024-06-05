@@ -319,11 +319,8 @@ a{
     padding-top: 5px;
 }
 .Icon2{
-    width: auto;
-    height: 400px;
-
-    padding-right: 20px;
-    padding-top: 5px;
+    width: 600px;
+    height: auto;
 }
 .InfoContainer{
     display: flex;
@@ -388,6 +385,13 @@ a{
     width: 50ch;
     padding-top: 5px;
     padding-bottom: 5px;
+
+    font-size: 1em;
+}
+@media only screen and (max-width: 560px){
+    .ServiceLabel{
+        font-size: 0.4em;
+    }
 }
 
 
